@@ -1,0 +1,142 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>theyellow</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="stylesheet4nw.css">
+        <link rel="stylesheet" href="responsive.css" media="(min-width:769px) and (max-width:1200px)">
+        <link rel="stylesheet" href="responsive1.css" media="(max-width:768px)">
+        <link rel="stylesheet" href="responsive1-rough.css" media="(max-width:760px)">
+        
+         
+    </head>
+    <body>
+        <div class="container">
+           
+            <div id="header-wrapper">
+                <div id="header1">
+                    <img alt="#" src="responsive/logo.png"> 
+                    <div  id="logo"><img src="responsive/TheYalow.png" alt="#"></div>
+                    <ul>
+                        <li><a href="#"><img src="responsive/about.png"> ABOUT US</a></li>
+                        <li><a href="#"><img src="responsive/services.png"> SERVICES</a></li>
+                        <li><a href="#"><img src="responsive/contact.png"> CONTACT</a></li>
+                    </ul>
+                    
+                </div>
+                <div id="header2">
+                    <div id="left"><a href="#"><img src="responsive/left.png" alt="#"></a></div>
+                    <div id="center">
+                        
+                        
+                       <div class="slideshow-container">
+                            <div class="mySlides fade">
+                              <a href="#"><img src="responsive/banner.png" alt="#"></a>
+                            </div>
+                           <div class="mySlides fade">
+                              <a href="#"><img src="responsive/Ariel.jpg" alt="#"></a>
+                            </div>
+                           <div class="mySlides fade">
+                              <a href="#"><img src="responsive/parrot.jpg" alt="#"></a>
+                            </div>
+
+                           <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                           <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                     </div>
+                        
+                     <div id="h1"><div id="h2">THE COOL</div><div id="h3">THE MINIMAL</div></div>
+
+                     <div id="dot1">
+                          <span class="dot" onclick="currentSlide(1)"></span> 
+                          <span class="dot" onclick="currentSlide(2)"></span> 
+                          <span class="dot" onclick="currentSlide(3)"></span> 
+                    </div>
+                    
+                    </div>  
+                    
+                    <div id="right"><a href="#"><img src="responsive/right.png" alt="#"></a></div>
+                </div>
+            </div>
+            
+            
+            <div id="icon">
+                <div class="icons" id="better-design"><a href="#"><img src="responsive/design.png" alt="#"><p>BETTER DESIGN</p></a></div>
+                <div class="icons"><a href="#"><img src="responsive/customise.png" alt="#"><p>CUSTOMISE</p></a></div>
+                <div class="icons"><a href="#"><img src="responsive/free.png" alt="#"><p>ITS FREE</p></a></div>
+            </div>
+           
+            
+            <div id="social">
+                <h1>LOREM IPSUM DOLOR SIT AMET</h1>
+                <div id="lorem">
+                    <div class="block" >
+                        <div id="content">Lorem ipsum dolor sit amet consectetur adipisicing elit, set do euismod tempor incididant ut</div>
+                        <a href="#"><img src="responsive/plus.png" alt="#"></a>
+                    </div>
+                    <div id="vedio"><a href="#"><img src="responsive/Layer.png" alt="#"></a></div>
+                    <div class="block" id="twitter">
+                        <a href="#"><img src="responsive/twitter.png" alt="#"></a>
+                        <div id="numb">22</div>
+                        <a href="#" id="plus"><img src="responsive/plus.png" alt="#"></a>
+                    </div>
+                    <div id="date"><h3>25</h3><p>APRIL</p></div>
+                </div>
+                <div id="underline"><div id="indicator"></div></div>
+              </div>
+            
+            
+            <div id="responsive">
+                    <h1>LOREM IPSUM DOLOR SIT AMET</h1>
+                    <div id="center1">
+                        <a href="#"><img src="responsive/responsive.png" alt="#"></a>
+                        <ul><li> Sed ut perspiciatis unde omnis</li>
+                        <li> Lorem ipsum dolor sit amet_ consectetur adipisicing</li>
+                        <li> Sed ut perspiciatis unde omnis </li>
+                        <li>Lorem ipsum dolor sit amet_ consectetur adipisicing </li>
+                        </ul>
+                   </div>
+           </div>
+            
+          <footer>
+                <a href="#"><img src="responsive/TheYalow.png" alt="#"></a>
+                <p>Designed by cssauthor.com</p>
+            </footer>
+        </div>
+    
+        <script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+    </body>
+</html>
+    

@@ -1,0 +1,166 @@
+/* 
+    Document   : responsive1
+    Created on : Aug 24, 2017, 7:55:15 PM
+    Author     : Pooja
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+@media screen and (max-width:768px) {
+ 
+ /*  ----------Header Wrapper section ---------*/   
+    #header-wrapper {
+    height: auto;
+    width:768px;
+    overflow: hidden;
+   
+  }
+    #header1 {
+      width: 100%;
+      position: static;
+      height: 62px;
+        }
+  #header1 > img {
+      display: none;
+  }
+  #header1 #logo {
+      background-image: url("responsive/responsive-background.jpg") ;
+      float: left;
+      display: inline;
+      width: 222.43px;
+      height: 62px;
+     
+  }
+  #header1 #logo > img {
+     height: 40px; 
+     padding: 10px 30px;
+  }
+    #header1 > ul {
+      width: 544.57px;
+      height: 100%;
+      box-shadow: 0px 0px rgba(0, 0,0, 0),0px 0px rgba(0, 0, 0, 0);
+      box-sizing: border-box;
+      margin: 0px 0px 0px 222.43px;
+      float: none;
+  }
+   #header1 > ul li {
+       width: 177.52px;
+      padding: 12px 10px;
+       box-sizing: border-box;
+       height: 100%;
+      
+              }
+   #header1 > ul li img {
+      width: 24px;
+      height: 22px;
+       }
+     #header1 > ul li a {
+      font-size: 19.05px;
+      padding: 0px 0px 0px 10px;
+        }
+  #header2 {
+      position: static;
+                  }
+    #left {
+          display: none;
+                         }   
+   #right{
+         display: none;
+              }
+   #center  {
+     width: 100%;
+     margin: 0px;
+                 }
+                  
+  #center .slideshow-container {
+        float: none; 
+        display: block;
+        width: 100%;
+        height: 100%;
+        margin: 0px 95px;
+            
+              }
+      
+   #center #h1 {
+       display: none;
+      }
+ /*  --------------- icons section -------------*/
+      #icon {
+    width:768px;
+    height: 200px;
+    box-sizing: border-box;
+    overflow: hidden;
+   }
+#icon .icons {
+    width: 255px;
+    border-right:none;
+        }
+ /*  -------------- Social section --------------*/      
+     #social {
+    width: 768px;
+    height: auto;
+    overflow: hidden;
+    
+}
+#social h1 {
+    display: none;
+}
+#social #lorem {
+    width: 100%;
+    margin: 10px 0px 0px 20px;
+    overflow: hidden;
+    
+           }
+#social #lorem .block {
+    width: 380px;
+   }
+#social #lorem #vedio {
+   margin-left: 20px;
+      } 
+#social #lorem #twitter {
+    float: left;
+    margin: 10px 180px 10px;
+    }
+#social #lorem #date {
+    display: none;
+       }
+#social #underline {
+    display: none;
+    }
+  
+
+/*  --------------- Responsive section --------------*/
+#responsive {
+      width: 768px;
+        }
+#responsive > h1 {
+    width: 100%;
+}
+#responsive #center1 {
+    width: 76%;
+  }
+
+#responsive #center1 ul {
+    display: none;
+}
+/*  --------------- Footer section ------------*/
+footer {
+    width: 768px;
+    overflow: hidden;
+    clear: both;
+  }
+footer a img {
+   margin-left: 50px;
+}
+footer > p {
+   margin-right: 50px;
+}
+    
+    
+    
+    
+    
+    
+    
+}
+

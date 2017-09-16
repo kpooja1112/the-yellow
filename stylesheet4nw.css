@@ -1,0 +1,437 @@
+/* 
+    Document   : stylesheet4nw
+    Created on : Aug 29, 2017, 1:46:16 PM
+    Author     : Pooja
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+
+@font-face {
+font-family: 'SegoeWP';
+src: url('./fonts/segoe-wp-n/SegoeWPN.woff');
+}
+@font-face {
+font-family: 'Asap';
+src: url('./fonts/asap/Asap-Regular.otf');
+}
+@font-face {
+font-family: 'Segoe UI';
+src: url('./fonts/segoe-ui/Segoeui.ttf');
+}
+@font-face {
+font-family: 'PTSans';
+src: url('./fonts/pt-sans/PTC55F.ttf');
+}
+@font-face {
+font-family: 'OpenSans';
+src: url('./fonts/open-sans/OpenSans-Regular.ttf');
+}
+
+
+.container { 
+    width: 100%;
+    height: auto;
+    margin: 0;
+    overflow: hidden;
+    }
+/*  ----------Header Wrapper section ---------*/
+#header-wrapper {
+    width: 100%;
+    height: 566px;
+    background-image: url("responsive/background.jpg");
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+   
+  }
+  /*  ------Header-1 section -----*/
+ #header1 {
+      width: 77%;
+      position: relative;
+      top:30px;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  
+ #header1 > img {
+      width: 36.84%;
+      height: auto;
+      float: left;
+  }
+ #header1 #logo {display: none;}
+ #header1 > ul {
+      list-style-type: none;
+      background-color: #f5c506;
+      margin: 20px 0px 0px 0px;
+      float: right;
+      width: 453px;
+      padding: 0px;
+      border: 0.5px solid #9b7d08;
+      box-shadow: -10px -10px rgba(245, 197, 6, 0.27),-5px -5px rgba(245, 197, 6, 0.27);
+      
+  }
+   #header1 > ul li {
+      display: inline-block;
+      padding: 8px 15px 8px 15px;
+      border-right:0.5px solid #9b7d08; 
+      font-family: SegoeWP;
+      transition: 0.5s ease-in-out;
+         }
+        #header1 > ul li:last-child {
+            border-right: 0px;
+        }
+  #header1 > ul li:hover {
+      opacity: 0.5;
+                         
+  }      
+  #header1 > ul li img {
+      width: 24px;
+      height: 19px;
+      margin: 0px 5px 0px 0px;
+  }
+    #header1 > ul li a {
+      text-decoration: none;
+      color: #9b7d08;
+      font-size: 17.05px;
+      text-align: center;
+  }
+  #header1::after{
+      content: "";
+      clear: both;
+      display: table;
+  } 
+  /*  -------Header-2 section ------*/
+  #header2 {
+         width: 100%;
+         height: 327px;
+         position: relative;
+         top: 50px;
+         }
+ 
+  #left {
+          width: 32px;
+          height: 57px;
+          background-color: #f5c506;
+          position: absolute;
+          left: 0;
+          bottom: 150px;
+          transition: 0.5s ease-in-out;
+                         } 
+  #left:hover {
+         background-color: #000;                    
+                         }                    
+      #left a img {
+          width: 13px;
+        margin: 19px 9.5px;
+      }    
+  #right{
+          width: 32px;
+          height: 57px;
+          background-color: #f5c506;
+          position: absolute;
+          right: 0;
+          bottom: 150px;
+          transition: 0.5s ease-in-out;
+              }
+  #right:hover {
+         background-color: #000;                    
+                         }
+      #right a img {
+          width: 13px;
+        margin: 19px 9.5px;
+      }
+   #center  {   
+     width: 77%;
+      margin: 40px auto ;
+      height: 360px;
+      box-sizing:border-box
+            }
+            
+            
+   #center > .slideshow-container .mySlides {display:none}        
+   #center > .slideshow-container {
+        float: left; 
+        max-width: 557px;
+        height: auto;   /* height:335px;*/
+        position: relative;
+        overflow: hidden;
+      }
+    
+  #center > .slideshow-container .prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 14px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+#center > .slideshow-container .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+#center > .slideshow-container .prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+#center #dot1 {
+   clear: both;
+   max-width: 557px;
+   text-align: center;
+   margin: 0;
+}
+
+#center #dot1 .dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, #center #dot1 .dot:hover {
+  background-color: black;
+}
+  .fade {
+    
+  animation-name: fade;
+  animation-duration: 1.5s;
+}   
+    
+   #center #h1 {
+          float: right;
+          width: 392px;
+          font-family: Asap;
+          font-size: 55px;
+          text-align: center;
+          margin-top: 100px;
+          margin-right: 40px;
+          line-height: 70px;
+      }
+      #center #h1 #h2 {
+          color:  #f5c506;
+      }
+      #center #h1 #h3 {
+          color:  #ffffff;
+      }
+/*  --------------- icons section -------------*/   
+#icon {
+    clear: both;
+    width: 992px;
+    margin: 0 auto;
+    height: 212px;
+    border: 1px solid rgb(169, 169, 167);
+}
+#icon .icons {
+    float: left;
+    width: 330px;
+    height: 100%;
+    text-align: center;
+    border-right: 1px solid rgb(169, 169, 167);
+        }
+    #icon .icons:last-child {
+    border-right:0;
+}
+#icon .icons a {
+    text-decoration: none;
+}
+#icon .icons img {
+    
+    margin-top: 40px;
+    margin-bottom: 5px;
+}
+#icon .icons p {
+    font-family: 'Segoe UI';
+    color:  #000000;
+    font-size: 27.05px;
+    margin: 0px;
+    
+           }
+           #icon .icons p:hover{
+               color: maroon;
+           }
+       #icon #better-design img {
+           margin-top: 60px;
+       }      
+       
+/*  -------------- Social section --------------*/   
+#social {
+    clear: both;
+    width: 100%;
+    height: 509px;
+    background-image: url("responsive/background-one.jpg");
+    background-size: 100%;
+    margin-top: 0px;
+    overflow: hidden;
+}
+#social h1 {
+font-family: PTSans;
+color:  #ffffff;
+font-size: 30px;
+margin-left: 161.8px;
+margin-top: 40px;
+}
+#social #lorem {
+    width: 77%;
+    margin: 0 auto;
+    height: auto;
+   }
+#social #lorem .block {
+    width: 340px;
+       height: 232px;
+    background-color: rgb(236, 158, 3);
+    float: left;
+    position: relative;
+}
+#social #lorem .block #content {
+    font-family: SegoeWP;
+    color:  #ffffff;
+    font-size: 29.05px;
+    line-height: 38px;
+    overflow: hidden;
+    width: 272px;
+    margin: 20px auto;
+}
+#social #lorem .block a {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+#social #lorem #vedio {
+     width: 315px;
+       height: 232px;
+       float: left;
+} 
+#social #lorem #vedio:hover {
+    opacity: 0.8;
+}
+#social #lorem #twitter {
+    float: right;
+    position: relative;
+}
+#social #lorem #twitter > a {
+    position: absolute;
+    top:50px;
+    left: 90px;
+}
+#social #lorem #twitter #plus img {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+#social #lorem #twitter #numb {
+    width: 24px;
+       height: 18px;
+    position: absolute;
+    top:15px;
+    right: 15px;
+    font-family: SegoeWP;
+color:  #ffffff;
+font-size: 25.05px;
+}
+#social #lorem #date {
+    width: 113px;
+    height: 86px;
+    background-color: rgba(185, 148, 3, 0.8);
+        text-align: center;
+        overflow: hidden;
+       }
+#social #lorem #date > h3 {
+    font-family: 'Segoe UI';
+color:  #ffffff;
+font-size: 45px;
+margin: 0;
+}
+#social #lorem #date > p {
+    font-family: 'Segoe UI';
+color:  #b26529;
+font-size: 21.05px;
+margin: 0;
+}
+#social #underline {
+    width: 896px;
+    height: 15px;
+    margin: 50px auto 20px;
+    background-color: rgba(255, 255, 255, 0.48);
+    border-radius: 8px;
+    }
+#social #underline #indicator {
+    width: 196px;
+    height: 100%;
+    background-color: #ec9e03;
+    border-radius: 8px;
+    margin-left: 230px;
+}
+/*  --------------- Responsive section --------------*/
+#responsive {
+    clear: both;
+  width: 100%;
+    height: 499px;
+    background-image:url("responsive/responsive-background.jpg");  
+     background-size: 100%;
+     overflow: hidden;
+}
+#responsive > h1 {
+    font-family: PTSans;
+    color:  #f5c506;
+    font-size: 43.05px;
+    text-align: center;
+    margin-top: 40px;
+}
+#responsive #center1 {
+    width: 77%;
+    margin: 30px auto 0px;
+    height: auto;
+    overflow: hidden;
+    
+}
+#responsive #center1 > a {
+    float: left;
+    width: 531px;
+}
+#responsive #center1 ul {
+    float: right;
+    width: 390px;
+    margin-top: 80px;
+}
+#responsive #center1 ul li {
+    font-family: OpenSans; 
+    color:  #a9a9a7;
+    font-size: 22px;
+    list-style-image: url("responsive/shape.png");
+    font-weight: 400;
+    margin-bottom: 20px;
+    
+}
+/*  --------------- Footer section ------------*/
+footer {
+    width: 100%;
+    height: 64px;
+    background-color:grey;
+    box-shadow: 0px -3px 5px 0px rgba(0, 0, 0, 0.75);
+}
+footer a img {
+    float: left;
+    width: 219px;
+    margin-left: 150px;
+}
+
+footer > p {
+    float: right;
+    font-family: OpenSans;
+color:  #ffffff;
+font-size: 17.05px;
+margin-top: 20px;
+margin-right: 150px;
+
+}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}

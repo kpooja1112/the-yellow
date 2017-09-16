@@ -1,0 +1,46 @@
+/* 
+    Document   : responsive
+    Created on : Aug 23, 2017, 3:19:50 PM
+    Author     : Pooja
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+@media screen and (min-width:769px) and (max-width:1200px) {
+ 
+#center #h1 {
+          display: none;
+      }
+#icon {
+        width: 100%;
+   }
+#icon .icons {
+    
+        width: 25%;
+            }
+#icon .icons:last-child {
+    border-right: 1px solid rgb(169, 169, 167);
+}
+#social {
+    height: auto;
+}   
+#social #lorem {
+    width: 100%;
+       }
+#social #lorem .block {
+    width:33.96%;
+     }
+#social #lorem .block #content {
+        font-size: 25px;
+   }
+#social #lorem #twitter {
+    
+    float: left;
+   }
+#social #lorem #date {
+    display: none;
+       }
+#social #underline {
+    display: none;
+    }
+}
